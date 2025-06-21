@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>
-    <i> TEST WEBSITE </i>
-  </title>
+<style> 
+div {
+  width: 1000px;
+  height: 40px;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 2s ease;
+  animation-fill-mode: backwards;
+}
+
+#div1 {background-color: MediumSeaGreen;animation-delay: 0s;}
+#div2 {background-color: none;animation-delay: 0.5s;}
+
+@keyframes mymove {
+  from {top: -300px;}
+  to {top: 0px;}
+}
+</style>
 </head>
 <body>
-<h1 style="background-color:MediumSeaGreen;">The Alphabet</h1>
-<p style="color:MediumSeaGreen;">ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</p>
+
+<div id="div1">
+<h1 style="color:white;">The Alphabet</h1>
+</div>
+
+<div id="div2">
+<p style="color:black;">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+
+</div>
+
 </body>
 </html>
+
+
